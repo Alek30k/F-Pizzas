@@ -1,12 +1,5 @@
-import "../styles/globals.css";
+// import "@/styles/globals.css";
 
-function MyApp() {
-  return (
-    <div>
-      {/* <Component {...pageProps} /> */}
-      Hola
-    </div>
-  );
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
-
-export default MyApp;
