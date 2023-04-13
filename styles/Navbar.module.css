@@ -54,3 +54,12 @@
   list-style: none;
   color: white;
 }
+
+.listItem {
+  margin: 20px;
+  font-weight: 500;
+}
+
+.cart {
+  position: relative;
+}
