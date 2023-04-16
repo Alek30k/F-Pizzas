@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const Featured = () => {
   const [index, setIndex] = useState(0);
-  const images = ["/img/slide03.jpg", "/img/slider2.jpg", "/img/pizzza.jpg"];
+  const images = ["/img/pizzaSlider1.png", "/img/33.jpg", "/img/pizzza.jpg"];
 
   const handleArrow = (direction) => {
     if (direction === "l") {
