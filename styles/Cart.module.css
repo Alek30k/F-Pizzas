@@ -28,6 +28,12 @@
   font-size: 18px;
 }
 
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .total {
   font-weight: 500;
   font-size: 18px;
