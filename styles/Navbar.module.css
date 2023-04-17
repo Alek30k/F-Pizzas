@@ -81,9 +81,9 @@
   color: #d1411e;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 952px) {
   .text:last-child {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
   }
   .callButton {
@@ -93,14 +93,14 @@
     width: 40px;
     height: 40px;
   }
+
+  .listItem {
+    margin: 10px;
+  }
 }
 @media screen and (max-width: 800px) {
   .listItem {
     margin: 10px;
-  }
-
-  .item:nth-child(1) {
-    display: none;
   }
 
   .item:last-child {
