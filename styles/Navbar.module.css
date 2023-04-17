@@ -108,8 +108,15 @@
   }
 }
 @media screen and (max-width: 580px) {
- 
+  .listItem {
+    margin: 5px;
+  }
 
+  .item:last-child .cart {
+    width: 25px;
+    height: 25px;
+  }
+}
 @media screen and (max-width: 480px) {
   .item:nth-child(2) {
     display: none;
