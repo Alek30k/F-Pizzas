@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -18,7 +19,9 @@ const Navbar = () => {
           <li className={styles.listItem}>Homepage</li>
           <li className={styles.listItem}>Products</li>
           <li className={styles.listItem}>Menu</li>
-          <Image src="/img/logo.png" alt="" width="160px" height="69px" />
+          <Link href="/">
+            <Image src="/img/logo.png" alt="" width="160px" height="69px" />
+          </Link>
           <li className={styles.listItem}>Events</li>
           <li className={styles.listItem}>Blog</li>
           <li className={styles.listItem}>Contact</li>
