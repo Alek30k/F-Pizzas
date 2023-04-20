@@ -1,6 +1,7 @@
 import styles from "../../styles/Product.module.css";
 import Image from "next/image";
 import { useState } from "react";
+import axios from "axios";
 
 const Product = () => {
   const [size, setSize] = useState(0);
