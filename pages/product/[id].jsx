@@ -6,6 +6,8 @@ import axios from "axios";
 const Product = ({ pizza }) => {
   const [size, setSize] = useState(0);
 
+  console.log(pizza);
+
   return (
     <div className={styles.container}>
       <div className={styles.left}>
@@ -42,7 +44,7 @@ const Product = ({ pizza }) => {
                 name="double"
                 className={styles.checkbox}
               />
-              <label htmlFor="double">Double Ingredients</label>
+              <label htmlFor="double">{option.text}</label>
             </div>
           ))}
         </div>
