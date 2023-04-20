@@ -1,3 +1,4 @@
+import axios from "axios";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Featured from "../components/Featured";
