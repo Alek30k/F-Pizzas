@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "../styles/PizzaCard.module.css";
 
-const PizzaCard = () => {
+const PizzaCard = ({ pizza }) => {
   return (
     <div className={styles.container}>
       <Image src="/img/pizza.png" alt="" width="500" height="500" />
