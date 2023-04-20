@@ -14,7 +14,7 @@ const Product = ({ pizza }) => {
         </div>
       </div>
       <div className={styles.right}>
-        <h1 className={styles.title}>{pizza.name}</h1>
+        <h1 className={styles.title}>{pizza.title}</h1>
         <span className={styles.price}>${pizza.prices[size]}</span>
         <p className={styles.desc}>{pizza.desc}</p>
         <h3 className={styles.choose}>Choose the size</h3>
@@ -34,42 +34,17 @@ const Product = ({ pizza }) => {
         </div>
         <h3 className={styles.choose}>Choose additional ingredients</h3>
         <div className={styles.ingredients}>
-          <div className={styles.option}>
-            <input
-              type="checkbox"
-              id="double"
-              name="double"
-              className={styles.checkbox}
-            />
-            <label htmlFor="double">Double Ingredients</label>
-          </div>
-          <div className={styles.option}>
-            <input
-              className={styles.checkbox}
-              type="checkbox"
-              id="cheese"
-              name="cheese"
-            />
-            <label htmlFor="cheese">Extra Cheese</label>
-          </div>
-          <div className={styles.option}>
-            <input
-              className={styles.checkbox}
-              type="checkbox"
-              id="spicy"
-              name="spicy"
-            />
-            <label htmlFor="spicy">Spicy Sauce</label>
-          </div>
-          <div className={styles.option}>
-            <input
-              className={styles.checkbox}
-              type="checkbox"
-              id="garlic"
-              name="garlic"
-            />
-            <label htmlFor="garlic">Garlic Sauce</label>
-          </div>
+          {pizza.extraOptions.map((option) => (
+            <div className={styles.option} key={option._id}>
+              <input
+                type="checkbox"
+                id="double"
+                name="double"
+                className={styles.checkbox}
+              />
+              <label htmlFor="double">Double Ingredients</label>
+            </div>
+          ))}
         </div>
         <div className={styles.add}>
           <input type="number" defaultValue={1} className={styles.quantity} />
