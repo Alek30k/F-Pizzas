@@ -3,12 +3,14 @@ import Image from "next/image";
 import { useState } from "react";
 import axios from "axios";
 import { addProduct } from "../../redux/cartSlice";
+import { useDispatch } from "react-redux";
 
 const Product = ({ pizza }) => {
   const [price, setPrice] = useState(pizza.prices[0]);
   const [size, setSize] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [extras, setExtras] = useState([]);
+  const dispatch = useDispatch();
 
   const changePrice = (number) => {
     setPrice(price + number);
