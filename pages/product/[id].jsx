@@ -9,8 +9,6 @@ const Product = ({ pizza }) => {
   const [quantity, setQuantity] = useState(1);
   const [extras, setExtras] = useState([]);
 
-  console.log(quantity);
-
   const changePrice = (number) => {
     setPrice(price + number);
   };
