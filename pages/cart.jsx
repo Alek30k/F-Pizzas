@@ -18,6 +18,9 @@ const Cart = () => {
             <th>Quantity</th>
             <th>Total</th>
           </tr>
+          {!cart.products[0] && (
+            <span className={styles.empty}>SHOPPING CART EMPTY</span>
+          )}
           {cart.products.map((product) => (
             <tr className={styles.tr} key={product._id}>
               <td>
