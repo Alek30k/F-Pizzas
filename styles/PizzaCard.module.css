@@ -25,6 +25,18 @@
   text-align: center;
   color: #777;
 }
+/* 
+.imagePizza {
+  width: 200px;
+  height: 200px;
+} */
+
+/* @media screen and (max-width: 970px) {
+  .imagePizza {
+    width: 100px;
+    height: 100px;
+  }
+} */
 
 @media screen and (max-width: 480px) {
   .container {

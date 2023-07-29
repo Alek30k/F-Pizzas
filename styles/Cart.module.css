@@ -11,15 +11,6 @@
   flex: 1;
 }
 
-.empty {
-  color: rgb(221, 219, 219);
-  position: absolute;
-  top: 125px;
-  left: 35%;
-  font-size: 24px;
-  font-weight: bold;
-}
-
 .imgContainer {
   width: 100px;
   height: 100px;
@@ -29,19 +20,12 @@
 .table {
   width: 100%;
   border-spacing: 20px;
-  position: relative;
 }
 
 .name {
   font-weight: 500;
   color: #d1411e;
   font-size: 18px;
-}
-
-.quantity {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .total {
@@ -130,4 +114,19 @@
   .wrapper {
     width: 100%;
   }
+}
+
+.paymentMethods {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.payButton {
+  padding: 10px 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  background-color: white;
+  color: teal;
+  font-weight: bold;
 }
